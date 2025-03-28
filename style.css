@@ -1,0 +1,11 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  margin: 20px;
+}
+#file-upload-container {
+  margin-right: 20px;
+}
+canvas {
+  border: 1px solid black;
+}

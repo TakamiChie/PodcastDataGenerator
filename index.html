@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Podcast Data Generator</title>
+</head>
+<body>
+  <h1>Podcast Data Generator</h1>
+  <div id="audioFileContainer">
+    <label for="audioFile">オーディオファイル</label>
+    <input type="file" id="audioFile" accept="audio/*">
+    <canvas id="audioCanvas" width="800" height="200"></canvas>
+  </div>
+  <div id="controllerArea">
+    <div class="optionItem">
+      <label for="gain">ゲイン目標値:</label>
+      <input type="range" id="gain" value="0.9" step="0.05" min="0.1" max="1">
+      <span id="gainValue"></span>
+    </div>
+
+    <button id="download" disabled="disabled">ダウンロード</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
